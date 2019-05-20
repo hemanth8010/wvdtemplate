@@ -1,0 +1,102 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "_artifactsLocation": {
+            "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool"
+        },
+        "_artifactsLocationSasToken": {
+            "value": ""
+        },
+        "rdshImageSource": {
+            "value": "CustomImage"            
+        },
+        "vmImageVhdUri": {
+            "value": "https://mystorageacc.blob.core.windows.net/vmimages/mysyspreppedVM.VHDX"
+        },
+        "rdshUseManagedDisks": {
+            "value": true
+        },      
+        "storageAccountResourceGroupName": {
+            "value": ""
+        },
+        "rdshCustomImageSourceName": {
+            "value": "My Azure VM Image"
+        },
+        "rdshCustomImageSourceResourceGroup": {
+            "value": "My VM Image Resource Group"
+        },
+        "rdshGalleryImageSKU": {
+            "value": ""
+        },
+        "rdshNamePrefix": {
+            "value": "HP2"
+        },
+        "avSetSuffix": {
+            "value": "HP2"
+        },
+        "rdshNumberOfInstances": {
+            "value": 1
+        },
+        "rdshVMDiskType": {
+            "value": "SSD"
+        },
+        "rdshVmSize": {
+            "value": "Standard_D2S_v3"
+        },
+        "enableAcceleratedNetworking": {
+            "value": false
+        },
+        "domainToJoin": {
+            "value": "kloudeez.com"
+        },
+        "existingDomainUPN": {
+            "value": "adjoin@kloudeez.com"
+        },
+        "existingDomainPassword": {
+            "value": "Sysgain@123456"
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "existingVnetName": {
+            "value": "DC-S2S-Spoke01"
+        },
+        "existingSubnetName": {
+            "value": "Default"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "RDS-WVD"
+        },
+        "rdBrokerURL": {
+            "value": "https://rdbroker.wvd.microsoft.com"
+        },
+        "existingTenantGroupName": {
+            "value": "Default Tenant Group"
+        },
+        "existingTenantName": {
+            "value": "qlbl-wvd"
+        },
+        "hostPoolName": {
+            "value": "sroja-HP"
+        },
+        "enablePersistentDesktop": {
+            "value": false
+        },
+        "defaultDesktopUsers": {
+            "value": "RDSUser3@kloudeez.com,RDSUser4@kloudeez.com"
+        },
+        "tenantAdminUpnOrApplicationId": {
+            "value": "sroja@kloudeez.com"
+        },
+        "tenantAdminPassword": {
+            "value": "Passme1!"
+        },
+        "isServicePrincipal": {
+            "value": false
+        },
+        "aadTenantId": {
+            "value": "b4b59439-fa05-42dd-8a62-34fecb7973cb"
+        }
+    }
+}

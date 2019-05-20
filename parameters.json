@@ -1,0 +1,99 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "_artifactsLocation": {
+            "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool/nestedtemplates"
+        },
+        "_artifactsLocationSasToken": {
+            "value": ""
+        },
+        "rdshImageSource": {
+            "value": "Gallery"            
+        },
+        "rdshGalleryImageSKU": {
+            "value": "2012-R2-Datacenter"
+        },
+        "vmImageVhdUri": {
+            "value": ""
+        },
+        "rdshCustomImageSourceName": {
+            "value": ""
+        },
+        "rdshCustomImageSourceResourceGroup": {
+            "value": "hp8"
+        },      
+        "storageAccountResourceGroupName": {
+            "value": ""
+        },
+        "rdshVmSize": {
+            "value": "Standard_D2S_v3"
+        },       
+        "rdshNamePrefix": {
+            "value": "hp8"
+        },
+        "rdshNumberOfInstances": {
+            "value": 1
+        },
+        "rdshVMDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "enableAcceleratedNetworking": {
+            "value": false
+        },
+        "rdshUseManagedDisks": {
+            "value": true
+        },
+        "domainToJoin": {
+            "value": "kloudeez.com"
+        },
+        "existingDomainUPN": {
+            "value": "adjoin@kloudeez.com"
+        },
+        "existingDomainPassword": {
+            "value": "Sysgain@123456"
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "existingVnetName": {
+            "value": "DC-S2S-SPOKE01"
+        },
+        "existingSubnetName": {
+            "value": "Default"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "RDS-WVD"
+        },
+        "rdBrokerURL": {
+            "value": "https://rdbroker.wvd.microsoft.com"
+        },
+        "existingTenantGroupName": {
+            "value": "Default Tenant Group"
+        },
+        "existingTenantName": {
+            "value": "QLBL-WVD"
+        },
+        "hostPoolName": {
+            "value": "hp8"
+        },
+        "enablePersistentDesktop": {
+            "value": false
+        },
+        "defaultDesktopUsers": {
+            "value": "rdsuser1@kloudeez.com"
+        },
+        "tenantAdminUpnOrApplicationId": {
+            "value": "hemanth@kloudeez.com"
+        },
+        "tenantAdminPassword": {
+            "value": "Passme1!"
+        },
+        "isServicePrincipal": {
+            "value": false
+        },
+        "aadTenantId": {
+            "value": ""
+        }
+    }
+}
